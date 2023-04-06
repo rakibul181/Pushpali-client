@@ -5,7 +5,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { AuthContext } from '../../Context/AuthProvider';
 import toast from 'react-hot-toast';
-import useToken from '../../hooks/useToken';
+import useToken from '../../hook/useToken';
 
 
 const Resister = () => {

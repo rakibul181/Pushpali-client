@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { FcGoogle } from 'react-icons/fc';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
-import useToken from '../../hooks/useToken';
+import useToken from '../../hook/useToken';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm()
