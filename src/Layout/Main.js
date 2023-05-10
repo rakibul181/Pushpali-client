@@ -1,18 +1,16 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Navbar from '../Component/Navbar';
 import Footer from '../Component/Footer';
-import { Outlet } from 'react-router-dom';
 
-const Mian = () => {
+const Main = ( ) => {
     return (
         <div>
             <Navbar></Navbar>
-            <Outlet></Outlet>
+                <Outlet></Outlet>
             <Footer></Footer>
-
-
         </div>
     );
 };
 
-export default Mian;
+export default Main;

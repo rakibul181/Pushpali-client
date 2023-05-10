@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../Context/AuthProvider'; 
 import { MdOutlineDashboard } from 'react-icons/md'
+import { AuthContext } from '../Context/AuthProvider';
+import logo from '../assist/logo.png'
 
 const Navbar = () => {
     const {user, userSignOut} = useContext(AuthContext);
@@ -42,7 +43,7 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                 <Link to={'/'} className="btn text-primary btn-ghost normal-case text-xl">PUSHPALI</Link> 
+                <Link to={'/'} className="text-primary bg-white normal-case text-xl"><img className='w-40' src={logo} alt='logo'></img></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
